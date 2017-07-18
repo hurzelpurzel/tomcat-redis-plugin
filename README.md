@@ -1,12 +1,15 @@
 # tomcat-redis-plugin
+This plugin enables a set of tomcat 8 instances to use the same session store based on redis.
+This could be useful for sharing session infos for load balancing without sticky sessions.
+
 
 Copy of https://github.com/jcoleman/tomcat-redis-session-manager Just enable Tomat 8 Classloading.
 for infos about Redis Key-Value store see
 http://openmymind.net/2012/1/23/The-Little-Redis-Book/
 
 
-#Tomcat context.xml
-Following entry must be made in Tomcat context.xml to enable 
+# Tomcats context.xml
+Following entry must be made in Tomcat context.xml to enable Redis session
 ```
 <Valve className="com.orangefunction.tomcat.redissessions.RedisSessionHandlerValve" />
 <Manager className="com.orangefunction.tomcat.redissessions.RedisSessionManager"
