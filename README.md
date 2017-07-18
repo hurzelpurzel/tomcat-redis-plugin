@@ -3,8 +3,9 @@ This plugin enables a set of tomcat 8 instances to use the same session store ba
 This could be useful for sharing session infos for load balancing without sticky sessions.
 
 
-Copy of https://github.com/jcoleman/tomcat-redis-session-manager Just enable Tomat 8 Classloading.
-for infos about Redis Key-Value store see
+Copy of https://github.com/jcoleman/tomcat-redis-session-manager 
+Just enable Tomat 8 Classloading.
+For infos about Redis Key-Value store see
 http://openmymind.net/2012/1/23/The-Little-Redis-Book/
 
 
